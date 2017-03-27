@@ -13,7 +13,7 @@ public static ArrayList<Integer> numberSort(ArrayList<Integer> numbers){
     while(numbers.size() > 0 ){
 
     Integer lowest = findLowest(numbers);
-
+    // cast into an Integer object type so that the remove and add functions act on the values of the items in the arraylists and not the index's.
     numbers.remove((Integer) lowest);
     sortedArray.add((Integer) lowest);
     }
